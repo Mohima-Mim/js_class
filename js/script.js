@@ -125,3 +125,41 @@ console.log(myNameIs > mohimaMim); // > flase
 console.log(aa > bb); // > flase
 console.log(aaa > bbb); // > flase
 
+
+//Array Methods---------------------(class-04)----------------------------
+
+
+//-------concat------------
+let MM = [ 'M' , 'o' , 'h'];
+let mm = [ 'i' , 'm' , 'a'];
+
+console.log(MM.concat(mm))
+
+
+let myFirstArray = [ "mahuya" , "mohima" , "redoan" , "tamzid" , "jahid" , "nusrat" , "mushira"];
+
+//myFirstArray.shift()
+//myFirstArray.unshift("Apu")
+//myFirstArray.pop()
+//myFirstArray.push("end")
+//myFirstArray.splice(2 , 0 , "mim")
+//myFirstArray.splice(2 , 1 , "mim")
+//myFirstArray.splice(2 , 1 )
+//delete myFirstArray[0]
+//console.log(myFirstArray.length)
+//let mim = myFirstArray.join(' loves ')
+//console.log(mim)
+console.log(myFirstArray)
+
+
+//loop------------------------------------
+
+for(let i = 1 ; i <=10 ; i++){
+    console.log(`${15} x ${i} = ${15*i}`)
+}
+
+
+for(let i = 0 ; i< myFirstArray.length ; i++){
+    console.log(myFirstArray[i])
+}
+
