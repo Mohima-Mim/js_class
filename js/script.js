@@ -149,10 +149,11 @@ let myFirstArray = [ "mahuya" , "mohima" , "redoan" , "tamzid" , "jahid" , "nusr
 //console.log(myFirstArray.length)
 //let mim = myFirstArray.join(' loves ')
 //console.log(mim)
-console.log(myFirstArray)
+console.log(myFirstArray);
+console.log(myFirstArray.reverse());
 
 
-//loop------------------------------------
+//----------------For-loop------------------------------------
 
 for(let i = 1 ; i <=10 ; i++){
     console.log(`${15} x ${i} = ${15*i}`)
@@ -161,5 +162,87 @@ for(let i = 1 ; i <=10 ; i++){
 
 for(let i = 0 ; i< myFirstArray.length ; i++){
     console.log(myFirstArray[i])
+}
+
+//_______________________________Class=05_______________________________
+
+//------slice--------------------------
+let ac = "amr nam mohima";
+console.log(ac.slice(8 , 14));
+
+
+let bc = ac.slice(0 , 4);
+console.log(bc);
+
+
+//---------subString----------------
+let cc = "Mohima Akter Mim";
+console.log(cc.substring(7 , 12));
+
+let dc = cc.substring(0 , 12);
+console.log(dc);
+
+
+// -----------substr--------------------
+let ec = "taufik vhaiya";
+console.log(ec.substr(7));
+
+
+// -----------replace/replaceAll-------------
+let fc = "i like my work.";
+console.log(fc.replace("like" , "love"));
+
+let gc = "I love my work and work and work and work.";
+let firstPart = gc.slice(0 , 6);
+let secondPart = gc.slice(9 , 42);
+let result = firstPart.concat(secondPart); //---------------concat-------------------
+console.log(result);
+console.log(result.replaceAll("work" , "mySelf"));
+
+// ----------toUpperCase-----------------------
+let hc = "sheikh redoan ahmed srabon";
+console.log(hc.toUpperCase());
+
+
+// ----------toUpperCase-----------------------
+let ic = "SHEIKH REDOAN AHMED SRABON";
+console.log(ic.toLowerCase());
+
+// ----------trim-----------------------
+let jc = "                           Sheikh Redoan Ahmed Srabon                           "
+console.log(jc.trim());
+console.log(jc.trimStart());
+console.log(jc.trimEnd());
+
+
+
+//---------String Lenth Check-----------------
+console.log(gc.length);         
+
+
+
+
+
+// ----------------if-else---------------------
+
+
+
+
+
+// --------------Switch-------------------------
+let flower = "rose";
+
+switch (flower){
+    case "rose":
+        console.log("Roses are red");
+        break;
+    case "violet":
+        console.log("Violets are blue");
+        break;
+    case "sunflower":
+        console.log("Sunflowers are yellow");
+        break;
+    default:
+        console.log("Please select another flower");
 }
 
