@@ -246,3 +246,77 @@ switch (flower){
         console.log("Please select another flower");
 }
 
+// --------------------Function---------------------
+
+
+// ------------------Normal_Function---------------
+
+const  body = document.querySelector("body");
+
+
+
+function myNormalFunction (a = "w" , b = "x" , c = "y" , d = "z"){
+    let fullNAme = a.concat(b).concat(c).concat(d);
+    return fullNAme;
+};
+
+let returnFullName = myNormalFunction("My" , " name" , " is" , " Mohima");
+
+function nameShowFunction (name = "Nothing To Show") {
+    let heading = document.createElement("h1");
+    body.appendChild(heading);
+    heading.innerHTML= name;
+    heading.style.color= "#000";
+    heading.style.textAlign= "center";
+    heading.style.marginTop= "200px";
+    heading.style.fontSize= "70px";
+    body.style.background= "linear-gradient(7deg, rgb(0, 255, 207), rgb(177, 14, 113))";
+    body.style.height= "100vh";
+};
+
+nameShowFunction(returnFullName);
+
+
+//-------------Arrow_Function--------------------------
+
+
+let myArrowFunction =  (ab = "w" , bb = "x" , cb = "y" , db = "z") => {
+    let fullNAme = ab.concat(bb).concat(cb).concat(db);
+    return fullNAme;
+}
+let arrowFullName = myArrowFunction("I" , " love" , " my" , " work");
+
+let nameShowArrowFunction =  (name2 = "Nothing To Show") => {
+    let heading1 = document.createElement("h2");
+    body.appendChild(heading1);
+    heading1.innerHTML= name2;
+    heading1.style.color= "white";
+    heading1.style.textAlign= "center";
+    heading1.style.marginTop= "80px";
+    heading1.style.fontSize= "50px";
+};
+
+nameShowArrowFunction(arrowFullName);
+
+
+//-----------------Anonymous_Function-----------------------------
+
+
+let annoFun = function (aaa = "w" , bbb = "x" , ccc = "y" , ddd = "z"){
+    let fullNAme = aaa.concat(bbb).concat(ccc).concat(ddd);
+    return fullNAme;
+};
+
+ let anFun = annoFun("I" , " love" , " java" , " Script");
+
+let newFun = function (name3 ="Nothing to show"){
+    let heading3 = document.createElement("h3");
+    body.appendChild(heading3);
+    heading3.innerHTML= name3;
+    heading3.style.color= "#000";
+    heading3.style.textAlign= "center";
+    heading3.style.marginTop= "80px";
+    heading3.style.fontSize= "60px";
+};
+
+newFun(anFun);
